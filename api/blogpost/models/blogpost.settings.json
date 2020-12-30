@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogposts",
+  "info": {
+    "name": "blogpost"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "Slug": {
+      "type": "uid",
+      "required": true,
+      "targetField": "name"
+    },
+    "pubdate": {
+      "type": "datetime",
+      "required": true
+    },
+    "featuredImg": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "body": {
+      "type": "richtext",
+      "required": true
+    },
+    "blogpost": {
+      "model": "blogpost"
+    },
+    "categories": {
+      "via": "blogposts",
+      "collection": "categories"
+    }
+  }
+}

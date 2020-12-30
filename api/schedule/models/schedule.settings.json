@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "schedules",
+  "info": {
+    "name": "schedule"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "scheduleJSON": {
+      "type": "json"
+    },
+    "scheduleDate": {
+      "type": "datetime",
+      "required": true
+    },
+    "scheduleday": {
+      "type": "string",
+      "required": true
+    },
+    "theSchedule": {
+      "type": "richtext",
+      "required": true
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "scheduleday"
+    }
+  }
+}
