@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "schedules",
   "info": {
-    "name": "schedule"
+    "name": "schedule",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -10,24 +11,32 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "scheduleJSON": {
-      "type": "json"
-    },
-    "scheduleDate": {
-      "type": "datetime",
+    "pubtime": {
+      "type": "time",
       "required": true
     },
-    "scheduleday": {
+    "ar_day": {
       "type": "string",
       "required": true
     },
-    "theSchedule": {
+    "fr_body": {
       "type": "richtext",
       "required": true
     },
     "Slug": {
-      "type": "uid",
-      "targetField": "scheduleday"
+      "type": "uid"
+    },
+    "fr_day": {
+      "type": "string"
+    },
+    "eng_day": {
+      "type": "string"
+    },
+    "ar_body": {
+      "type": "richtext"
+    },
+    "eng_body": {
+      "type": "richtext"
     }
   }
 }
