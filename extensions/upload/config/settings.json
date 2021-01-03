@@ -1,7 +1,0 @@
-{
-  "provider": "cloudinary",
-  "providerOptions": {     "cloud_name":"bassem-azizi",
-    "api_key": "271826953837947",               
-    "api_secret":"P72f8vGSPJeWAt_w3K0QW1cHnzk"
-  }
-}
