@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "blogposts",
   "info": {
-    "name": "blogpost"
+    "name": "blogpost",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -24,11 +25,11 @@
       "required": true
     },
     "featuredImg": {
-      "collection": "file",
+      "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
         "files",
+        "images",
         "videos"
       ],
       "plugin": "upload",
@@ -42,8 +43,8 @@
       "model": "blogpost"
     },
     "categories": {
-      "via": "blogposts",
-      "collection": "categories"
+      "collection": "categories",
+      "via": "blogposts"
     }
   }
 }
