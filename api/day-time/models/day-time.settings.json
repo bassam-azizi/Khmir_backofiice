@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "day_times",
+  "info": {
+    "name": "day_time",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "time_en": {
+      "type": "string"
+    },
+    "time_fr": {
+      "type": "string"
+    },
+    "time_ar": {
+      "type": "string"
+    }
+  }
+}

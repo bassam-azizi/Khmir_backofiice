@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "schedules",
   "info": {
-    "name": "schedule",
+    "name": "Schedule",
     "description": ""
   },
   "options": {
@@ -11,32 +11,44 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "pubtime": {
-      "type": "time",
-      "required": true
-    },
-    "ar_day": {
-      "type": "string",
-      "required": true
-    },
-    "fr_body": {
-      "type": "richtext",
-      "required": true
-    },
-    "Slug": {
-      "type": "uid"
-    },
-    "fr_day": {
+    "title_en": {
       "type": "string"
     },
-    "eng_day": {
+    "title_fr": {
       "type": "string"
     },
-    "ar_body": {
+    "title_ar": {
+      "type": "string"
+    },
+    "serie_en": {
+      "type": "string"
+    },
+    "serie_fr": {
+      "type": "string"
+    },
+    "serie_ar": {
+      "type": "string"
+    },
+    "episode_length": {
+      "type": "string"
+    },
+    "start_time": {
+      "type": "string"
+    },
+    "description": {
       "type": "richtext"
     },
-    "eng_body": {
-      "type": "richtext"
+    "picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "day_time": {
+      "model": "day-time"
     }
   }
 }
