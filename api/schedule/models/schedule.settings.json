@@ -35,7 +35,7 @@
     "start_time": {
       "type": "string"
     },
-    "description": {
+    "description_en": {
       "type": "richtext"
     },
     "picture": {
@@ -49,6 +49,15 @@
     },
     "day_time": {
       "model": "day-time"
+    },
+    "author": {
+      "model": "author"
+    },
+    "description_fr": {
+      "type": "richtext"
+    },
+    "description_ar": {
+      "type": "richtext"
     }
   }
 }
