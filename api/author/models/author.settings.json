@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "authors",
   "info": {
-    "name": "author"
+    "name": "author",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -21,17 +22,19 @@
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images"
+        "files",
+        "images",
+        "videos"
       ],
       "plugin": "upload",
-      "required": false
+      "required": true
     },
     "role": {
       "type": "string"
     },
     "episodes": {
-      "via": "author",
-      "collection": "episode"
+      "collection": "episode",
+      "via": "author"
     }
   }
 }
