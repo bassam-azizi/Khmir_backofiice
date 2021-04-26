@@ -31,10 +31,6 @@
     },
     "role": {
       "type": "string"
-    },
-    "episodes": {
-      "collection": "episode",
-      "via": "author"
     }
   }
 }

@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "episodes",
   "info": {
-    "name": "episode"
+    "name": "episode",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -10,15 +11,42 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "name": {
+    "title_en": {
       "type": "string",
       "required": true
     },
-    "time": {
-      "type": "time",
+    "title_fr": {
+      "type": "string"
+    },
+    "title_ar": {
+      "type": "string",
       "required": true
     },
-    "episode_cover": {
+    "slug": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "serie_en": {
+      "type": "string"
+    },
+    "serie_fr": {
+      "type": "string"
+    },
+    "serie_ar": {
+      "type": "string",
+      "required": true
+    },
+    "description_en": {
+      "type": "richtext"
+    },
+    "description_ar": {
+      "type": "richtext"
+    },
+    "description_fr": {
+      "type": "richtext"
+    },
+    "picture": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -27,13 +55,18 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": false
+      "required": true
     },
-    "description": {
+    "credits_en": {
+      "type": "richtext"
+    },
+    "creadits_fr": {
+      "type": "richtext"
+    },
+    "credits_ar": {
       "type": "richtext"
     },
     "author": {
-      "via": "episodes",
       "model": "author"
     }
   }
