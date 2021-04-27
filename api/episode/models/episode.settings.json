@@ -57,17 +57,16 @@
       "plugin": "upload",
       "required": true
     },
-    "credits_en": {
-      "type": "richtext"
-    },
-    "creadits_fr": {
-      "type": "richtext"
-    },
-    "credits_ar": {
-      "type": "richtext"
-    },
     "author": {
       "model": "author"
+    },
+    "contributors_en": {
+      "model": "contributors-en",
+      "via": "episodes"
+    },
+    "contributors_ar": {
+      "model": "contributors-ar",
+      "via": "episodes"
     }
   }
 }

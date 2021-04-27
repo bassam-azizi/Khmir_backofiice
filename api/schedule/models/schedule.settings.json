@@ -60,6 +60,14 @@
     },
     "description_ar": {
       "type": "richtext"
+    },
+    "contributors_ar": {
+      "via": "schedules",
+      "model": "contributors-ar"
+    },
+    "contributors_en": {
+      "via": "schedules",
+      "model": "contributors-en"
     }
   }
 }

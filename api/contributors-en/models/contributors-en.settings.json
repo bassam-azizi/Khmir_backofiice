@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contributors_ens",
+  "info": {
+    "name": "contributors_en",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "episodes": {
+      "via": "contributors_en",
+      "collection": "episode"
+    },
+    "schedules": {
+      "collection": "schedule",
+      "via": "contributors_en"
+    }
+  }
+}
