@@ -60,13 +60,13 @@
     "author": {
       "model": "author"
     },
-    "contributors_en": {
-      "model": "contributors-en",
-      "via": "episodes"
+    "contributors_ars": {
+      "via": "episodes",
+      "collection": "contributors-ar"
     },
-    "contributors_ar": {
-      "model": "contributors-ar",
-      "via": "episodes"
+    "contributors_ens": {
+      "via": "episodes",
+      "collection": "contributors-en"
     }
   }
 }

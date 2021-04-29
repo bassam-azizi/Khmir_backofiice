@@ -15,12 +15,14 @@
       "type": "string"
     },
     "episodes": {
-      "via": "contributors_en",
-      "collection": "episode"
+      "collection": "episode",
+      "via": "contributors_ens",
+      "dominant": true
     },
     "schedules": {
       "collection": "schedule",
-      "via": "contributors_en"
+      "via": "contributors_ens",
+      "dominant": true
     }
   }
 }
