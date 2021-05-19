@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "contributors_ens",
+  "collectionName": "contributors",
   "info": {
-    "name": "contributors_en",
+    "name": "contributors",
     "description": ""
   },
   "options": {
@@ -10,18 +10,28 @@
     "timestamps": true,
     "draftAndPublish": true
   },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "episodes": {
+      "via": "contributors",
       "collection": "episode",
-      "via": "contributors_ens",
       "dominant": true
     },
     "schedules": {
+      "via": "contributors",
       "collection": "schedule",
-      "via": "contributors_ens",
       "dominant": true
     }
   }
