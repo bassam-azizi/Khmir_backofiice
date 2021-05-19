@@ -10,15 +10,19 @@
     "timestamps": true,
     "draftAndPublish": true
   },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
-    "time_en": {
-      "type": "string"
-    },
-    "time_fr": {
-      "type": "string"
-    },
-    "time_ar": {
-      "type": "string"
+    "time": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
