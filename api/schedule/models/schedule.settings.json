@@ -10,33 +10,51 @@
     "timestamps": true,
     "draftAndPublish": true
   },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
-    "title_en": {
-      "type": "string"
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
-    "title_fr": {
-      "type": "string"
-    },
-    "title_ar": {
-      "type": "string"
-    },
-    "serie_en": {
-      "type": "string"
-    },
-    "serie_fr": {
-      "type": "string"
-    },
-    "serie_ar": {
-      "type": "string"
+    "serie": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "episode_length": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "start_time": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
-    "description_en": {
-      "type": "richtext"
+    "description": {
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "picture": {
       "model": "file",
@@ -47,7 +65,12 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "day_time": {
       "model": "day-time"
@@ -55,19 +78,9 @@
     "author": {
       "model": "author"
     },
-    "description_fr": {
-      "type": "richtext"
-    },
-    "description_ar": {
-      "type": "richtext"
-    },
-    "contributors_ens": {
-      "via": "schedules",
-      "collection": "contributors-en"
-    },
-    "contributors_ars": {
-      "via": "schedules",
-      "collection": "contributors-ar"
+    "contributors": {
+      "collection": "contributors-en",
+      "via": "schedules"
     }
   }
 }
