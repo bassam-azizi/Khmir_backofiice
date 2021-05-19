@@ -10,10 +10,20 @@
     "timestamps": true,
     "draftAndPublish": true
   },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "name": {
       "type": "string",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "Slug": {
       "type": "uid",
@@ -22,7 +32,12 @@
     },
     "pubdate": {
       "type": "datetime",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "featuredImg": {
       "model": "file",
@@ -33,18 +48,28 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": false
+      "required": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "body": {
       "type": "richtext",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "blogpost": {
       "model": "blogpost"
     },
     "categories": {
-      "collection": "categories",
-      "via": "blogposts"
+      "via": "blogposts",
+      "collection": "categories"
     }
   }
 }
