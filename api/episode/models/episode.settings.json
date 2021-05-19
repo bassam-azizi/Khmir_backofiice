@@ -10,41 +10,46 @@
     "timestamps": true,
     "draftAndPublish": true
   },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
-    "title_en": {
+    "title": {
       "type": "string",
-      "required": true
-    },
-    "title_fr": {
-      "type": "string"
-    },
-    "title_ar": {
-      "type": "string",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "slug": {
       "type": "string",
       "unique": true,
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
-    "serie_en": {
-      "type": "string"
-    },
-    "serie_fr": {
-      "type": "string"
-    },
-    "serie_ar": {
+    "serie": {
       "type": "string",
-      "required": true
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
-    "description_en": {
-      "type": "richtext"
-    },
-    "description_ar": {
-      "type": "richtext"
-    },
-    "description_fr": {
-      "type": "richtext"
+    "description": {
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "picture": {
       "model": "file",
@@ -55,18 +60,19 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "author": {
       "model": "author"
     },
-    "contributors_ars": {
-      "via": "episodes",
-      "collection": "contributors-ar"
-    },
-    "contributors_ens": {
-      "via": "episodes",
-      "collection": "contributors-en"
+    "contributors": {
+      "collection": "contributors-en",
+      "via": "episodes"
     }
   }
 }
