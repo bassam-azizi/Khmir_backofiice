@@ -73,6 +73,16 @@
     "contributors": {
       "collection": "contributors-en",
       "via": "episodes"
+    },
+    "name": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": false,
+      "unique": false
     }
   }
 }
