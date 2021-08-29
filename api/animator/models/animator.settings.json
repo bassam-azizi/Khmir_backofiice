@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "animators",
+  "info": {
+    "name": "animator"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "animator": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "unique": true
+    },
+    "episodes": {
+      "via": "animators",
+      "collection": "episode",
+      "dominant": true
+    },
+    "Slogan": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "occupation": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "schedules": {
+      "via": "animators",
+      "collection": "schedule"
+    }
+  }
+}

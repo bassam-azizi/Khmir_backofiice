@@ -16,7 +16,7 @@
     }
   },
   "attributes": {
-    "title": {
+    "serie_title": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -75,8 +75,10 @@
     "day_time": {
       "model": "day-time"
     },
-    "author": {
-      "model": "author"
+    "animators": {
+      "collection": "animator",
+      "via": "schedules",
+      "dominant": true
     },
     "contributors": {
       "collection": "contributors-en",
@@ -92,7 +94,7 @@
       "required": false,
       "unique": true
     },
-    "name": {
+    "episode_title": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -100,6 +102,14 @@
       },
       "type": "string",
       "unique": false
+    },
+    "url": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string"
     }
   }
 }

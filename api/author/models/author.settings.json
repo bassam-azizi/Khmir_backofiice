@@ -56,6 +56,14 @@
           "localized": true
         }
       }
+    },
+    "email": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "email"
     }
   }
 }
