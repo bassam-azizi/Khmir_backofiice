@@ -2,7 +2,8 @@
   "kind": "singleType",
   "collectionName": "lives",
   "info": {
-    "name": "live"
+    "name": "live",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -14,6 +15,12 @@
     "episode": {
       "unique": true,
       "model": "episode"
+    },
+    "LiveEpisode": {
+      "type": "string"
+    },
+    "episodeId": {
+      "type": "uid"
     }
   }
 }
