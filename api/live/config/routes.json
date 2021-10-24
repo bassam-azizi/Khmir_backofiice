@@ -2,15 +2,39 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/live",
+      "path": "/lives",
       "handler": "live.find",
       "config": {
         "policies": []
       }
     },
     {
+      "method": "GET",
+      "path": "/lives/count",
+      "handler": "live.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lives/:id",
+      "handler": "live.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/lives",
+      "handler": "live.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "PUT",
-      "path": "/live",
+      "path": "/lives/:id",
       "handler": "live.update",
       "config": {
         "policies": []
@@ -18,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/live",
+      "path": "/lives/:id",
       "handler": "live.delete",
       "config": {
         "policies": []
