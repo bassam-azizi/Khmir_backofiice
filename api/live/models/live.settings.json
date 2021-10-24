@@ -1,8 +1,8 @@
 {
-  "kind": "collectionType",
-  "collectionName": "live",
+  "kind": "singleType",
+  "collectionName": "lives",
   "info": {
-    "name": "Live"
+    "name": "live"
   },
   "options": {
     "increments": true,
@@ -11,11 +11,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "defaultPodcast": {
+    "defaultStream": {
       "type": "string"
     },
-    "episode": {
-      "model": "episode"
+    "schedule": {
+      "model": "schedule"
     }
   }
 }
