@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "lives",
+  "info": {
+    "name": "live"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "episode": {
+      "unique": true,
+      "model": "episode"
+    }
+  }
+}
